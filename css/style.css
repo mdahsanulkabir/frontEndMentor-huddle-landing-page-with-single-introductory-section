@@ -20,15 +20,16 @@ body {
 }
 
 .container {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     width: 375px;
     margin: 40px auto;
     padding: 0 40px;
 }
 
 .logo {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 50px;
+    margin-bottom: 30px;
 }
 
 .logo img {
@@ -36,11 +37,94 @@ body {
 }
 
 .illustration {
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
+    margin-bottom: 60px;
 }
 
 .illustration img {
     max-width: 100%;
+}
+
+.community {
+    text-align: center;
+}
+
+.community h2 {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.community p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 1px 0 5px 1px  #333;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+}
+
+@media (min-width:376px) {
+    body {
+        background-image: url("../images/bg-desktop.svg");
+        background-size: 100%;
+    }
+
+    .container {
+        width: 1440px;
+        padding: 0 90px;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas: "logo ."
+                                "illustration ."
+                                "illustration community"
+                                "illustration .";
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .illustration {
+        grid-area: illustration;
+    }
+
+    .community {
+        grid-area: community;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    .community h2 {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .community p {
+        font-size: 17px;
+    }
+
+    button {
+        height: 60px;
+        border-radius: 30px;
+        width: 200px;
+    }
 }
 
 .attribution { 
