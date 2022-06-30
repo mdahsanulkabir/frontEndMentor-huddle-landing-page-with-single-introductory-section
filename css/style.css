@@ -78,7 +78,7 @@ button {
     width: 180px;
     border-radius: 20px;
     color: hsl(257, 40%, 49%);
-    box-shadow: 1px 0 5px 1px  #333;
+    box-shadow: 0 5px 5px  #333;
     cursor: pointer;
 }
 
@@ -106,6 +106,7 @@ button:hover {
         background-image: none;
         width: 80%;
         padding: 0 auto;
+        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         display: grid;
@@ -120,7 +121,7 @@ button:hover {
     }
 
     .logo img {
-        width: 200px;
+        width: 150px;
     }
 
     .illustration {
@@ -161,7 +162,6 @@ button:hover {
     body {
         background-image: url("../images/bg-desktop.svg");
         background-size: 100%;
-        background-repeat: no-repeat;
     }
 
     .container {
@@ -169,6 +169,7 @@ button:hover {
         width: 80%;
         max-width: 1400px;
         padding: 0 auto;
+        margin-top: 100px;
         margin-left: auto;
         margin-right: auto;
         display: grid;
@@ -180,16 +181,8 @@ button:hover {
                                 "footer footer";
     }
 
-    .logo {
-        grid-area: logo;
-    }
-
     .logo img {
         width: 200px;
-    }
-
-    .illustration {
-        grid-area: illustration;
     }
 
     .community {
@@ -206,15 +199,12 @@ button:hover {
 
     .community p {
         font-size: 17px;
+        line-height: 1.5;
     }
 
     button {
         height: 60px;
         border-radius: 30px;
         width: 200px;
-    }
-
-    footer { 
-        grid-area: footer;
     }
 }
